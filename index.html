@@ -77,12 +77,14 @@
 				<img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" width="100%" height="100%" />
 			</a>
 			<div class="site-description">
+				<hr color="white"> <!-- Begin statische Seiten -->
 				<ul>
 					<li><a href="/">Home</a></li>
 					<li><a href="http://thill.postach.io">Betreuung</a></li>
-					<li><a href="http://schlaganfall.postach.io">Schlaganfalltagebuch</a></li>
-					<!-- <li><a href="link">Link1</a></li> -->
-					<!-- Beginn flexible Seiten -->
+					<li><a href="http://schlaganfalltagebuch.postach.io">Schlaganfalltagebuch</a></li>
+				</ul>
+				<hr color="white"> <!-- Beginn flexible Seiten -->
+				<ul>
 					{% if pages %}
 						{% for page in pages %}
 							<li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
